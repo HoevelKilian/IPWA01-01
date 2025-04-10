@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kleiderspenden-Registrierung</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<!--Header mit der Navigationsbar-->
+<header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a href="index.html">
+                <img src="images/Logo.png" alt="" width="40" height="40" class="me-3">
+              </a>
+              <a class="navbar-brand" href="#">Kleiderspenden</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">Hilfsprojekte</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">Hintergründe</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+</header>
+
+<body>
+  <!-- Karussell für die ersten Eindrücke -->
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/kid-2603998_1280.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Kleiderspenden für Menschen in Afrika</h5>
+          <p>Mit Kleidung Hoffnung schenken.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/india-2507482_1280.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Kleiderspenden für Menschen in Indien</h5>
+          <p>Kleidung geben – Menschlichkeit zeigen.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/wanderer-814222_1280.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Kleiderspenden für obdachlose Menschen in Deutschland</h5>
+          <p>Wärme teilen, Leben retten."</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!--3 Karten für die unterschiedlichen Kriesengebiete-->
+  <div class="container mt-5">
+      <div class="row g-3 align-items-stretch">
+        
+        <div class="col-12 col-md-6 col-lg-4 d-flex">
+          <div class="card shadow">
+            <img src="images/children-734891_1280.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">1. Für Menschen in Afrika </h5>
+              <p class="card-text"> Viele Menschen in Afrika haben keinen Zugang zu geeigneter Kleidung. Mit deiner Spende hilfst du, Bedürftige zu versorgen und Schutz zu bieten. Gemeinsam schenken wir Wärme, Würde und echte Hoffnung.</p>
+             </div>
+           </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 d-flex">
+          <div class="card shadow">
+            <img src="images/poor-2754335_1280.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">2. Für Menschen in Indien</h5>
+              <p class="card-text"> In Indien fehlt es vielen Familien an warmer, wetterfester Kleidung. Deine Spende versorgt Kinder und Erwachsene mit dem Nötigsten. So zeigst du Solidarität und schenkst Schutz und Zuversicht.</p>
+             </div>
+           </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 d-flex">
+          <div class="card shadow">
+            <img src="images/poverty-6686427_1280.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">3. Für obdachlose Menschen</h5>
+              <p class="card-text"> Auch hierzulande sind viele Menschen auf Kleidung angewiesen. Vor allem im Winter ist Hilfe überlebenswichtig. Deine Spende gibt Wärme, Sicherheit und ein Zeichen der Menschlichkeit.</p>
+             </div>
+           </div>
+        </div>
+
+      </div>
+  </div>
+
+  <!-- Formular zur Kleiderspende-->
+  <div id="app" class="container py-5">
+    <h2 class="mb-4">Kleiderspende registrieren</h2>
+
+    <!--Abfragen der Spenden Art-->
+    <form @submit.prevent="verarbeiteSpende">
+      <div class="mb-3">
+        <label class="form-label">Art der Spende:</label>
+        <select class="form-select" v-model="spendenart">
+          <option value="geschaeftsstelle">Übergabe an der Geschäftsstelle</option>
+          <option value="abholung">Abholung durch Sammelfahrzeug</option>
+        </select>
+      </div>
+
+      <!--Bedingung falls die Spendenart Abholung ist sollen weitere Felder angezeigt werden-->
+      <div class="mb-3" v-if="spendenart === 'abholung'">
+        <label class="form-label">Abholadresse:</label>
+        <input type="text" class="form-control mb-2" v-model="adresse.strasse" placeholder="Straße und Hausnummer">
+        <input type="text" class="form-control mb-2" v-model="adresse.plz" placeholder="Postleitzahl">
+        <input type="text" class="form-control" v-model="adresse.ort" placeholder="Ort">
+      </div>
+
+      <!--Feld mit Art der Kleidung-->
+      <div class="mb-3">
+        <label class="form-label">Art der Kleidung:</label>
+        <input type="text" class="form-control" v-model="kleidung">
+      </div>
+
+      <!--Dropdown für die Auswahl des Kriesengebiets-->
+      <div class="mb-3">
+        <label class="form-label">Krisengebiet:</label>
+        <select class="form-select" v-model="krisengebiet">
+          <option>1. Für Menschen in Afrika</option>
+          <option>2. Für Menschen in Indien</option>
+          <option>3. Für obdachlose Menschen</option>
+        </select>
+      </div>
+
+      <!--Button zur Registrierung-->
+      <button type="submit" class="btn btn-primary">Registrieren</button>
+    </form>
+
+    <!--Ausgabe der Spendeninfos-->
+    <div class="mt-5" v-if="bestaetigt">
+      <h4>Vielen Dank für Ihre Spende!</h4>
+      <ul class="list-group">
+        <li class="list-group-item">👕 Art der Kleidung: {{ kleidung }}</li>
+        <li class="list-group-item">🌍 Krisengebiet: {{ krisengebiet }}</li>
+        <li class="list-group-item">📅 Datum & Uhrzeit: {{ datum }}</li>
+        <li class="list-group-item">📍 Übergabeort: {{ ausgabeOrt }}</li>
+      </ul>
+    </div>
+  </div>
+
+  <!--Aufnahme der json Main Datei-->
+  <script src="scripts/main.js"></script>
+</body>
+
+  <!--Footer mit Rechtlichen Informationen-->
+  <footer class="text-center mt-4 bg-dark text-white py-1">
+    <p>
+      <a href="Datenschutzerklaerung.html" class="btn btn-outline-light btn-sm mt-3">Datenschutz</a>
+      <a href="impressum.html" class="btn btn-outline-light btn-sm mt-3">Impressum</a>
+    </p>
+    <p class="small">
+      Kleiderspenden e.V. © 2025 – Alle Rechte vorbehalten 
+    </p>
+  </footer>
+</html>

@@ -1,0 +1,28 @@
+/* Header Styling */
+.custom-header {
+    background: linear-gradient(to right, #343a40, #1d2124);
+    padding: 10px 0;
+}
+
+/* Logo Styling */
+.logo {
+    height: 50px;
+}
+
+/* Navbar Link Styling */
+.navbar-dark .navbar-nav .nav-link {
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #f8d210;
+}
+
+.carousel-caption {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.38728995015975143) 100%);
+    left: 0;            
+    right: 0;
+    bottom: 0;
+}
